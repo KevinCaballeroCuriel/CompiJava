@@ -1,0 +1,396 @@
+Error 500: Se esperaba digito
+program Ejemplo;
+var
+    var1:integer;
+begin
+    var1 := 1.a
+end.
+
+Error 501: EOF inesperado
+program Ejemplo;
+var
+    var1:integer;
+begin
+    var1 := 1 {Comentario
+
+Error 502: EOL inesperado
+program Ejemplo;
+var
+    var1:integer;
+begin
+    write("Prueba
+")
+
+Error 503: Simbolo no valido
+program Ejemplo;
+var
+    var1:integer;
+begin
+    var1 := @
+end.
+
+
+
+program MayorDeEdad;
+var
+    edad:integer;
+begin
+    edad := -1;
+    while (edad < 0) or (edad > 100) do
+        begin
+            write("Edad: ");
+            read(edad);
+            if (edad >= 18) and (edad <= 100) then
+		write("Mayor de edad")
+            else
+		if (edad < 18) and (edad >= 0) then
+                    write("Menor de edad")
+		else
+                    write("Edad incorrecta")
+	end
+end.
+
+
+
+
+
+Inicio y fin de código en Mini-PASCAL
+Error 504: Se esperaba la palabra 'program'
+Ejemplo;
+var
+    var1:integer;
+begin
+    var1 :=1
+end.
+
+Error 505: Se esperaba identificador
+program;
+var
+    var1:integer;
+begin
+    var1 := 1
+end.
+
+Error 506: Se esperaba ';' después del identificador.
+program Ejemplo
+var
+    var1:integer;
+begin
+    var1 := 1
+end.
+
+Error 508: Se esperaba la palabra 'begin'
+program Ejemplo;
+begi
+    var1 := 1
+end.
+
+Error 517: Se esperaba <statement>
+program Ejemplo;
+var
+    var1:integer;
+begin
+    
+end.
+
+Error 509: Se esperaba la palabra 'end'
+program Ejemplo;
+var
+    var1:integer;
+begin
+    var1 := 1
+.
+
+Error 507: Se esperaba 'end.' para terminar el código
+program Ejemplo;
+var
+    var1:integer;
+begin
+    var1 := 1
+end
+
+Error 516: No se esperaba nada después del punto final
+program Ejemplo;
+var
+    var1:integer;
+begin
+    var1 := 1
+end.
+1
+
+Sin errores:
+program Ejemplo;
+var
+    var1:integer;
+begin
+    var1 := 1
+end.
+
+
+Declaración de variables
+Error 505: Se esperaba identificador
+program Ejemplo;
+var
+    :integer;
+begin
+    var1 := 1
+end.
+
+Error 522: Se esperaba ':' después del identificador
+Sin errores:
+program Ejemplo;
+var
+    var1
+begin
+    var1 := 1
+end.
+
+Error 510: Se esperaba el tipo de variable
+Sin errores:
+program Ejemplo;
+var
+    var1:
+begin
+    var1 := 1
+end.
+
+Error 511: Se esperaba ';' después del tipo
+Sin errores:
+program Ejemplo;
+var
+    var1:integer
+begin
+    var1 := 1
+end.
+
+Sin errores:
+program Ejemplo;
+var
+    var1:integer;
+begin
+    var1 := 1
+end.
+
+
+Leer un valor del teclado
+Error 512: Se esperaba '(' después del read
+program Ejemplo;
+var
+    var1:integer;
+begin
+    read
+end.
+
+
+Error 505: Se esperaba identificador
+program Ejemplo;
+var
+    var1:integer;
+begin
+    read(
+end.
+
+Error 513: Se esperaba ')' después del último id
+program Ejemplo;
+var
+    var1:integer;
+begin
+    read(var1
+end.
+
+Sin errores:
+program Ejemplo;
+var
+    var1:integer;
+begin
+    read(var1)
+end.
+
+
+Escribir un valor en pantalla
+Error 514: Se esperaba '(' después del write
+program Ejemplo;
+var
+    var1:integer;
+begin
+    write
+end.
+
+Error 521: Se esperaba <expression>
+program Ejemplo;
+var
+    var1:integer;
+begin
+    write(
+end.
+
+Error 515: Se esperaba ')' después de la última expresión
+program Ejemplo;
+var
+    var1:integer;
+begin
+    write("Ejemplo "
+end.
+
+Sin errores:
+program Ejemplo;
+var
+    var1:integer;
+begin
+    write("Ejemplo ",var1)
+end.
+
+
+Asignación
+Error 518: Se esperaba ':=' y un valor
+program Ejemplo;
+var
+    var1:integer;
+begin
+    var1 
+end.
+
+Error 521: Se esperaba <expression>
+program Ejemplo;
+var
+    var1:integer;
+begin
+    var1 := 
+end.
+
+Sin errores:
+program Ejemplo;
+var
+    var1:integer;
+begin
+    var1 := 1
+end.
+
+
+Sentencia IF
+Error 521: Se esperaba <expression>
+program Ejemplo;
+var
+    var1:integer;
+begin
+    if 
+end.
+
+Error 519: Se esperaba 'then' después de la expresión
+program Ejemplo;
+var
+    var1:integer;
+begin
+    if var1 < 0 
+end.
+
+Error 517: Se esperaba <statement>
+program Ejemplo;
+var
+    var1:integer;
+begin
+    if var1 < 0 then     
+end.
+
+Sin errores:
+program Ejemplo;
+var
+    var1:integer;
+begin
+    if var1 < 0 then
+        write(var1)
+end.
+
+
+Sentencia While
+Error 521: Se esperaba <expression>
+program Ejemplo;
+var
+    var1:integer;
+begin
+    while
+end.
+
+
+Error 520: Se esperaba 'do' después de la expresión
+program Ejemplo;
+var
+    var1:integer;
+begin
+    while var1 < 0
+end.
+
+
+Error 517: Se esperaba <statement>
+program Ejemplo;
+var
+    var1:integer;
+begin
+    while var1 < 0 do    
+end.
+
+
+Sin errores:
+program Ejemplo;
+var
+    var1:integer;
+begin
+    while var1 < 0 do
+        var1 := var1 + 1
+end.
+
+
+Sentencia IF y While anidados
+program Ejemplo;
+var
+    var1:integer;
+begin
+    if var1 < 0 then
+        begin
+            while var1 < 0 do
+                var1 := var1 + 1;
+            write(var1)
+        end
+    else
+        if var1 > 0 then 
+            begin
+                while var1 < 0 do
+                    var1 := var1 - 1;
+                write(var1)
+            end
+        else
+            write(var1)
+end.
+
+Nota: Los posibles errores que puedan surgir dentro de las 
+sentencias IF y While anidados son los mismos errores antes 
+mencionados.
+
+
+
+Corrección de código de prueba en Mini-PASCAL
+program MayorDeEdad;
+var
+    edad:integer;
+begin
+    edad := -1;
+    while (edad < 0) or (edad > 100) do
+        begin
+            write("Edad: ");
+            read(edad);
+            if (edad >= 18) and (edad <= 100) then
+		write("Mayor de edad")
+            else
+		if (edad < 18) and (edad >= 0) then
+                    write("Menor de edad")
+		else
+                    write("Edad incorrecta")
+	end
+end.
+
+
+
+
+
+
+

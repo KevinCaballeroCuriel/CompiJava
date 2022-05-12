@@ -1,0 +1,24 @@
+program MayorDeEdad;
+var
+    edad,c,d:integer;
+    mayor,menor:string;
+begin
+    edad := 0;
+    mayor := " eres mayor de edad";
+    menor := " eres menor de edad";
+    write("Escribe diferentes edades: ");
+    while (edad >= 0) and (edad < 100) do
+        begin
+            write("");
+            write("Edad: ");
+            read(edad);
+            write("");
+            if (edad >= 18) and (edad <= 100) then
+		write("Si tienes ",edad,mayor)
+            else
+		if (edad < 18) and (edad >= 0) then
+                    write("Si tienes ",edad,menor)
+		else
+                    write("Edad incorrecta. Adios")
+	end
+end.
